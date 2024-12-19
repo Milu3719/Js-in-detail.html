@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>JSvin detail</title>
+
+
+</head>
+
+<body>
+
+ <p id="search_result"></p>
+ <p id="replace_result"></p>
+ <p id="string_result"></p>
+ <p id="error_message"></p>
+
+ <h2>JavaScript Arrow function</h2>
+ <p>This example shows an arrow function with a parameter</p>
+ <p id="result"></p>
+
+    <script>
+
+    var str = "Man city 1 man United 2";
+    var search_position = str.search("city");
+    var txt = str.replace("How are","Watcha doin??")
+    var m = 87;
+    var w = 44;
+
+    document.getElementById("search_result").innerHTML = search_position;
+    document.getElementById("replace_result").innerHTML = txt;
+    document.getElementById("string_result").innerHTML = String(m) + String(w);
+
+    try{
+        add_alert("Mancity dowfall started");
+    }
+    catch(err) {
+
+        document.getElementById("error_massage").innerHTML = err.message;
+    }
+
+    add = (a,b) => a+b;
+    document.getElementById("result").innerHTML = add(5,8);
+
+    
+
+    </script>
+
+</body>
